@@ -1,0 +1,31 @@
+board octopus ver 1.0
+[mcu]
+canbus_uuid= 9eebd89dce01
+canbus_interface:can0
+canbus_uuid= 9eebd89dce01
+canbus_interface:can0
+
+
+[mcu EBBCan]
+# serial: /dev/serial/by-id/usb-Klipper_Klipper_firmware_12345-if00
+  canbus_uuid: 3ecfebf09431
+  canbus_uuid: 3ecfebf09431
+#  The following command is used to view the ID of canbus and needs to be entered in the ssh terminal.
+# “ ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0 ”
+ 
+[mcu eddy]
+serial: /dev/serial/by-id/usb-Klipper_rp2040_eddy-if00 
+
+
+
+[heater_bed]
+heater_pin: PA1              # (BE0)
+sensor_pin: PF3              # sensor interface(TB)
+sensor_type: ATC Semitec 104GT-2         #ATC Semitec 104GT-2
+control: pid                 ##heater_bed Temperature PID Calibration Command:  "PID_CALIBRATE HEATER=heater_bed TARGET=100"
+pid_kp: 58.437
+pid_ki: 2.347
+pid_kd: 363.769
+min_temp: -270
+max_temp: 120
+max_power: 1.0
