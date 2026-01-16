@@ -1,3 +1,24 @@
+Board octopus Version 1.0 
+
+Fan  
+    1) Nevermore : PA8
+    2)Controller1: PE5
+    3)Controller2: PD12
+    4)Exahuths: PD13
+    5) BedFans: PD14
+
+Thermostat
+  1)heater_bed: TB : PF3
+  2)Chamber     TO: PF4
+  3) Other      T1: PF5
+
+
+  Heater Connector
+    1)HeaterBed to SSR: HE1  PA3  
+    2) Toolhead Supply : HE2 PB10    
+
+
+
 board octopus ver 1.0
 [mcu]
 canbus_uuid= 9eebd89dce01
